@@ -19,7 +19,10 @@ Usage
 * Clone this repository
 * Firstly, fill the hosts.cfg as exemplarily shown in the hosts.cfg in this repo
  * Make sure you use unique ids
-* Secondly, in the cloned folder, this is important because the script assumes that
-the hosts.cfg and the *.nse file resides next to it, invoke:
+* Secondly in the cloned folder, this is important because the script assumes
+that the hosts.cfg and the *.nse file reside next to it, invoke:
 
-`python heartbleed_check.py`
+* `python heartbleed_check.py`
+
+* The output of this script is straight forward, it reports VULNERABLE hosts at the
+end (if found)

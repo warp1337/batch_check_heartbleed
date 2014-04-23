@@ -40,7 +40,7 @@ class Check:
                 config = ConfigParser.ConfigParser()
                 config.read('hosts.cfg')
                 host_items = config.items('hosts')
-                print "  >> Info: Reading your config file now"
+                print "  >> Info: Reading your config file"
 
                 for i, n in host_items:
                     self.hosts[i] = n
@@ -82,4 +82,6 @@ if __name__ == '__main__':
         print "  >> The following hosts are insecure"
         for i in c.serious.keys():
             print "  >> %s" % i
+    else:
+        print " >> All Good! You seem to be safe."
 
