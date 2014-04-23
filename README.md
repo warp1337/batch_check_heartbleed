@@ -1,4 +1,25 @@
 batch_check_heartbleed
 ======================
 
-A tiny Python script to check your hosts if they are affected by HEARTBLEED
+A tiny Python script to "batch check" your hosts if they are affected by HEARTBLEED
+
+Requirements
+============
+
+* This script has been tested on Linux __ONLY__
+* You will need a recent version of Nmap (tested: Nmap 6.40) on your machine
+* This script is (obviously) written in Python so you will also need Python2.7
+* Nmap is invoked with an additional LUA script you can find it
+ * Here: http://nmap.org/nsedoc/lib/tls.html
+ * Copy the script in LUA's nselib folder, i.e. __/usr/share/nmap/nselib/__
+
+Usage
+=====
+
+* Clone this repository
+* Firstly, fill the hosts.cfg as exemplarily shown in the hosts.cfg in this repo
+ * Make sure you use unique ids
+* Secondly, in the cloned folder, this is important because the script assumes that
+the hosts.cfg and the *.nse file resides next to it, invoke:
+
+`python heartbleed_check.py`
