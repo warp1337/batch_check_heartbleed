@@ -26,5 +26,5 @@ that the hosts.cfg and the *.nse file reside next to it, invoke:
 
 * The output of this script is straight forward, it reports VULNERABLE hosts at the
 end (if found)
-* IMPORTANT: If you check against hosts that don't have an SSL port open you will get a 
-__false positive__, same goes for hosts which are unreachable.
+* IMPORTANT: If you check against hosts that don't have a SSL port open you will 
+probably get a __false positive__, same goes for hosts which are unreachable.
