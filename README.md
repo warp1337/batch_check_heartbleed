@@ -9,7 +9,7 @@ Requirements
 * This script has been tested on Linux __ONLY__
 * You will need a recent version of Nmap (tested: Nmap 6.40) on your machine
 * This script is (obviously) written in Python so you will also need Python2.7
-* Nmap requires additional LUA scripts you can them, i.e,
+* Nmap requires additional LUA scripts you can find them, i.e,
  * Here: http://nmap.org/nsedoc/lib/tls.html
  * Copy the scripts in LUA's nselib folder, i.e. __/usr/share/nmap/nselib/__
 
